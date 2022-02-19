@@ -11,8 +11,12 @@ class Dice(val numSides: Int) {
 
 fun main ()
 {
+    //first Dice
     val myFirstDice = Dice(6) //NumSides
-    //println(myFirstDice.sides)
     val diceRoll = myFirstDice.roll()
     println("Your ${myFirstDice.numSides} sided dice rolled ${diceRoll}!")
+
+    //Second Dice
+    val mySecondDice = Dice(2) //NumSides
+    println("Your ${mySecondDice.numSides} sided dice rolled ${mySecondDice.roll()}!")
 }

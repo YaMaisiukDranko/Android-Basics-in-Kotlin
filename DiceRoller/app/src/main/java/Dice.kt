@@ -1,3 +1,9 @@
+import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import com.example.diceroller.R
+
 class Dice(val numSides: Int) {
     //val sides = 20 //Sides Number
 
@@ -20,3 +26,11 @@ fun main ()
     val mySecondDice = Dice(2) //NumSides
     println("Your ${mySecondDice.numSides} sided dice rolled ${mySecondDice.roll()}!")
 }
+
+private fun rollDice() {
+    val dice = Dice(6)
+    val diceRoll = dice.roll()
+    val diceImage: ImageView = findViewById(R.id.imageView)
+    diceImage.setImageResource(R.drawable.dice_2)
+}
+

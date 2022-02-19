@@ -1,9 +1,9 @@
 class Dice {
-    val sides = 6
+    val sides = 20 //Sides Number
 
-    fun roll(): Int
+    fun roll(): Int //All fun is Int
     {
-        val randomNum = (1..6).random()
+        val randomNum = (1..sides).random()
         println(randomNum)
         return randomNum
     }

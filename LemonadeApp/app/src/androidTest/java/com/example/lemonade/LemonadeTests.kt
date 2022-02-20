@@ -15,6 +15,7 @@
  */
 package com.example.lemonade
 
+import MainActivity
 import androidx.test.core.app.launchActivity
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click

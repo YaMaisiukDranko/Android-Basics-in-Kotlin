@@ -20,9 +20,21 @@
         android:id="@+id/service_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How was the service?"
+        android:text="@string/tip_amount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cost_of_service" />
+
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="280dp"
+        android:text="Tip Amount: $0"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_button"
+        />
 
     <RadioGroup
         android:id="@+id/tip_options"

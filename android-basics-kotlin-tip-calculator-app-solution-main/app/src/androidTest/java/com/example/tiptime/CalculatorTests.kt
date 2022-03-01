@@ -24,5 +24,6 @@ class CalculatorTests
         onView(withId(R.id.cost_of_service_edit_text))
             .perform(typeText("50.00"))
 
+        onView(withId(R.id.calculate_button)).perform(click())
     }
 }

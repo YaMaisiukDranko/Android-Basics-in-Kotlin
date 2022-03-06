@@ -39,8 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView = binding.recyclerView
         // Sets the LinearLayoutManager of the recyclerview
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = LetterAdapter()
+        chooseLayout()
     }
 
     private fun chooseLayout() {
@@ -68,6 +67,8 @@ class MainActivity : AppCompatActivity() {
                 ContextCompat.getDrawable(this, R.drawable.ic_grid_layout)
             else ContextCompat.getDrawable(this, R.drawable.ic_linear_layout)
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.layout_menu, menu)

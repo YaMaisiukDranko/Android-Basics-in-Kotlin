@@ -44,6 +44,11 @@ class MainActivity : AppCompatActivity() {
      */
     data class Dessert(val imageId: Int, val price: Int, val startProductionAmount: Int)
 
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart Called")
+    }
+
     // Create a list of all desserts, in order of when they start being produced
     private val allDesserts = listOf(
             Dessert(R.drawable.cupcake, 5, 0),

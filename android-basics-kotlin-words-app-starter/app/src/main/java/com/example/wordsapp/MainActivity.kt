@@ -47,4 +47,20 @@ class MainActivity : AppCompatActivity() {
         }
         recyclerView.adapter = LetterAdapter()
     }
+    private fun setIcon(menuItem: MenuItem?) {
+        if (menuItem == null)
+            return
+
+        // Set the drawable for the menu icon based on which LayoutManager is currently in use
+
+        // An if-clause can be used on the right side of an assignment if all paths return a value.
+        // The following code is equivalent to
+        // if (isLinearLayoutManager)
+        //     menu.icon = ContextCompat.getDrawable(this, R.drawable.ic_grid_layout)
+        // else menu.icon = ContextCompat.getDrawable(this, R.drawable.ic_linear_layout)
+        menuItem.icon =
+            if (isLinearLayoutManager)
+                ContextCompat.getDrawable(this, R.drawable.ic_grid_layout)
+            else ContextCompat.getDrawable(this, R.drawable.ic_linear_layout)
+    }
 }

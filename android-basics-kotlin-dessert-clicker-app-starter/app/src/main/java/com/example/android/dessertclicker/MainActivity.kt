@@ -44,6 +44,13 @@ class MainActivity : AppCompatActivity() {
      */
     data class Dessert(val imageId: Int, val price: Int, val startProductionAmount: Int)
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        Log.d(TAG, "onSaveInstanceState Called")
+        outState.putInt(KEY_REVENUE, revenue)
+    }
+
     override fun onStart() {
         super.onStart()
         Log.d(TAG, "onStart Called")
@@ -179,5 +186,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val TAG = "MainActivity"
+        const val KEY_REVENUE = "revenue_key"
+        const val KEY_DESSERT_SOLD = "dessert_sold_key"
     }
 }

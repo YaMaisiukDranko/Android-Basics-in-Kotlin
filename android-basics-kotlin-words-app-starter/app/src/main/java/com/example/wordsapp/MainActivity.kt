@@ -16,7 +16,11 @@
 package com.example.wordsapp
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wordsapp.databinding.ActivityMainBinding
@@ -26,7 +30,7 @@ import com.example.wordsapp.databinding.ActivityMainBinding
  */
 class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
-
+    private var isLinearLayoutManager = true
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -47,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
         recyclerView.adapter = LetterAdapter()
     }
+
     private fun setIcon(menuItem: MenuItem?) {
         if (menuItem == null)
             return
@@ -63,4 +68,15 @@ class MainActivity : AppCompatActivity() {
                 ContextCompat.getDrawable(this, R.drawable.ic_grid_layout)
             else ContextCompat.getDrawable(this, R.drawable.ic_linear_layout)
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.layout_menu, menu)
+
+        val layoutButton = menu?.findItem(R.id.action_switch_layout)
+        // Calls code to set the icon based on the LinearLayoutManager of the RecyclerView
+        setIcon(layoutButton)
+
+        return true
+    }
+
 }

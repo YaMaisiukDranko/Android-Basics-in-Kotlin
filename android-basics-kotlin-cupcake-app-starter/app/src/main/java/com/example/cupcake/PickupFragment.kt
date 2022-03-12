@@ -57,6 +57,11 @@ class PickupFragment : Fragment() {
         }
     }
 
+    fun cancelOrder() {
+        sharedViewModel.resetOrder()
+        findNavController().navigate(R.id.action_pickupFragment_to_startFragment)
+    }
+
     /**
      * Navigate to the next screen to see the order summary.
      */

@@ -83,6 +83,11 @@ class SummaryFragment : Fragment() {
             .putExtra(Intent.EXTRA_TEXT, orderSummary)
 
             .putExtra(Intent.EXTRA_EMAIL, "gametico@yandex.com") //Email for orders
+        
+        if (activity?.packageManager?.resolveActivity(intent, 0) != null) {
+            startActivity(intent)
+        }
+
     }
 
     /**

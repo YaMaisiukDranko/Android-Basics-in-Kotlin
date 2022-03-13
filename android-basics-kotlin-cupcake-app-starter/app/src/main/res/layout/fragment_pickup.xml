@@ -121,6 +121,7 @@
             <Button
                 android:id="@+id/next_button"
                 android:layout_width="0dp"
+                android:onClick="@{() -> pickupFragment.goToNextScreen()}"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/side_margin"
                 android:text="@string/next"

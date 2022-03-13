@@ -81,6 +81,8 @@ class SummaryFragment : Fragment() {
             .setType("text/plain")
             .putExtra(Intent.EXTRA_SUBJECT, getString(R.string.new_cupcake_order))
             .putExtra(Intent.EXTRA_TEXT, orderSummary)
+
+            .putExtra(Intent.EXTRA_EMAIL, "gametico@yandex.com") //Email for orders
     }
 
     /**

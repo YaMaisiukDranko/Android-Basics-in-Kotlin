@@ -69,6 +69,7 @@ class SummaryFragment : Fragment() {
      * Submit the order by sharing out the order details to another app via an implicit intent.
      */
     fun sendOrder() {
+        val numberOfCupcakes = sharedViewModel.quantity.value ?: 0
         val orderSummary = getString(
             R.string.order_details,
             sharedViewModel.quantity.value.toString(),
@@ -83,7 +84,7 @@ class SummaryFragment : Fragment() {
             .putExtra(Intent.EXTRA_TEXT, orderSummary)
 
             .putExtra(Intent.EXTRA_EMAIL, "gametico@yandex.com") //Email for orders
-        
+
         if (activity?.packageManager?.resolveActivity(intent, 0) != null) {
             startActivity(intent)
         }

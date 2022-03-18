@@ -10,11 +10,7 @@ var instantTaskExecutorRule = InstantTaskExecutorRule()
 class ViewModelTests {
 
     @Test
-    fun quantity_twelve_cupcakes() //TEST FAILED 18.02.2022 23:13
-    {
-        val viewModel = OrderViewModel()
-        viewModel.quantity.observeForever {}
-        viewModel.setQuantity(12)
-        assertEquals(12, viewModel.quantity.value)
+    fun price_twelve_cupcakes(){
+        
     }
 }

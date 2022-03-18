@@ -7,4 +7,10 @@ var instantTaskExecutorRule = InstantTaskExecutorRule()
 
 class ViewModelTests {
 
+    fun quantity_twelve_cupcakes()
+    {
+        val viewModel = OrderViewModel()
+        viewModel.quantity.observeForever {}
+        viewModel.setQuantity(12)
+    }
 }

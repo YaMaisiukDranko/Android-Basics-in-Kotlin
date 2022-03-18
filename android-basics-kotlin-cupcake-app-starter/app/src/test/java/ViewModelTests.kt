@@ -13,5 +13,6 @@ class ViewModelTests {
     fun price_twelve_cupcakes(){
         val viewModel = OrderViewModel()
         viewModel.setQuantity(12)
+        assertEquals("$27.00", viewModel.price.value)
     }
 }

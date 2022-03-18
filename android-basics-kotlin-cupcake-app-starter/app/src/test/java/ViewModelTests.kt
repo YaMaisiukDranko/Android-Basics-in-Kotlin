@@ -11,6 +11,7 @@ class ViewModelTests {
 
     @Test
     fun price_twelve_cupcakes(){
-        
+        val viewModel = OrderViewModel()
+        viewModel.setQuantity(12)
     }
 }

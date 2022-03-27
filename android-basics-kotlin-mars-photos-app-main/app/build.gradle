@@ -22,7 +22,9 @@ plugins {
 
 android {
     compileSdkVersion 31
-
+    sourceSets {
+        test.resources.srcDirs += 'src/test/res'
+    }
     defaultConfig {
         applicationId "com.example.android.marsphotos"
         minSdkVersion 21

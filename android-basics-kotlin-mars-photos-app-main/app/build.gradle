@@ -72,7 +72,7 @@ dependencies {
 
     // Coil
     implementation "io.coil-kt:coil:1.1.1"
-    
+
     //test
     testImplementation 'junit:junit:4.12'
     testImplementation "androidx.arch.core:core-testing:2.1.0"

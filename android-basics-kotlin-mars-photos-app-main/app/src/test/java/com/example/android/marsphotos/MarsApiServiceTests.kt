@@ -12,7 +12,9 @@ class MarsApiServiceTests {
     @Before
     fun setup() {
         val url = mockWebServer.url("/")
+
         service = Retrofit.Builder()
+            .baseUrl(url)
             .addConverterFactory(
                 MoshiConverterFactory.create(
                 Moshi.Builder()

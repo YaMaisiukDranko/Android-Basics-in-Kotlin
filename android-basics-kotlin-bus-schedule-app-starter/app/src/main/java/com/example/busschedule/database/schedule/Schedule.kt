@@ -1,4 +1,4 @@
-package com.example.busschedule.database
+package com.example.busschedule.database.schedule
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo

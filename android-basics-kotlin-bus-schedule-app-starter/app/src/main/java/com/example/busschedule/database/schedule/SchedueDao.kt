@@ -1,4 +1,3 @@
-package com.example.busschedule
 /*
  * Copyright (C) 2021 The Android Open Source Project
  *
@@ -14,10 +13,23 @@ package com.example.busschedule
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.example.busschedule.database.schedule
 
-import android.app.Application
-import com.example.busschedule.database.AppDatabase
+import androidx.room.Dao
+import androidx.room.Query
+import kotlinx.coroutines.flow.Flow
 
-class BusScheduleApplication : Application() {
-    val database: AppDatabase by lazy { AppDatabase.getDatabase(this) }
+/**
+ * Provides access to read/write operations on the schedule table.
+ * Used by the view models to format the query results for use in the UI.
+ */
+@Dao
+interface ScheduleDao {
+
+    @Query("SELECT * FROM schedule ORDER BY arrival_time ASC")
+    fun getAll(): Flow<List<Schedule>>
+
+    @Query("SELECT * FROM schedule WHERE stop_name = :stopName ORDER BY arrival_time ASC")
+    fun getByStopName(stopName: String): Flow<List<Schedule>>
+
 }

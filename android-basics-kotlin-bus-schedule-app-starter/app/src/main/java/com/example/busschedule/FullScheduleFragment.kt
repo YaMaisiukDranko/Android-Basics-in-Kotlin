@@ -21,6 +21,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.busschedule.databinding.FullScheduleFragmentBinding
@@ -40,6 +41,14 @@ class FullScheduleFragment: Fragment() {
         )
     }
 
+    val busStopAdapter = BusStopAdapter({
+        val action = FullScheduleFragmentDirections.actionFullScheduleFragmentToStopScheduleFragment(
+            stopName = it.stopName
+        )
+        view.findNavController().navigate(action)
+    })
+    recyclerView.adapter = busStopAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -55,6 +64,7 @@ class FullScheduleFragment: Fragment() {
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

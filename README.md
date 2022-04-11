@@ -1,5 +1,6 @@
 # Android Basics in Kotlin
 ### [Course Link](https://developer.android.com/courses/android-basics-kotlin/course)
+
 <details>
   <summary>Work Screenshots</summary>
   
@@ -16,8 +17,13 @@
 | [Affirmations App](https://github.com/YaMaisiukDranko/Learn_Kotlin/tree/main/android-basics-kotlin-affirmations-app-solution-main) | <img width="720" alt="Снимок экрана 2022-03-05 в 14 14 57" src="https://user-images.githubusercontent.com/44410069/162803938-ac9b609b-cf5a-4378-a721-9d78414b23c5.png"> |
 | [Affirmations App. Material Design](https://github.com/YaMaisiukDranko/Learn_Kotlin/tree/main/android-basics-kotlin-affirmations-app-solution-main) | <img width="720" alt="Снимок экрана 2022-03-05 в 14 17 29" src="https://user-images.githubusercontent.com/44410069/162803948-115837e0-0c61-4536-aad8-6d4a07aa882a.png"> |
 | [Tip Time. Instrumentation Tests](https://github.com/YaMaisiukDranko/Learn_Kotlin/tree/main/TipTime) | <img width="720" alt="Снимок экрана 2022-03-01 в 18 27 23" src="https://user-images.githubusercontent.com/44410069/162803947-d04b3e85-dcf8-441a-95f1-946166bb18d7.png"> |
-
+| [Words App. Navigation Tests](https://github.com/YaMaisiukDranko/Learn_Kotlin/tree/main/android-basics-kotlin-words-app-activities) | <img width="1440" alt="Снимок экрана 2022-03-07 в 12 40 29" src="https://user-images.githubusercontent.com/44410069/162811036-5187fe42-429d-487a-9e6d-573072290ced.png"> |
+| [CupCake App. ViewModel Tests](https://github.com/YaMaisiukDranko/Learn_Kotlin/tree/main/android-basics-kotlin-cupcake-app-starter) | <img width="1440" alt="Снимок экрана 2022-03-19 в 09 47 54" src="https://user-images.githubusercontent.com/44410069/162811046-49d9b618-d521-4295-ae41-2104ffb35b6c.png"> |
+| [Cupcake App. Navigate between screens](https://github.com/YaMaisiukDranko/Learn_Kotlin/tree/main/android-basics-kotlin-cupcake-app-starter) | <img width="1440" alt="Снимок экрана 2022-03-13 в 13 17 50" src="https://user-images.githubusercontent.com/44410069/162811027-20b557da-c7f0-4e50-b063-bd930601e4c0.png"> |
+| [SQL Basics. City Data](https://github.com/YaMaisiukDranko/Learn_Kotlin/tree/main/android-basics-kotlin-sql-basics-app-main) | <img width="1440" alt="Снимок экрана 2022-03-29 в 18 44 03" src="https://user-images.githubusercontent.com/44410069/162811043-e26508c6-9cea-4fed-b728-0f03c2941318.png"> |
+  
 </details>
+
 
 
 

@@ -1,5 +1,6 @@
 # Android Basics in Kotlin
-### [Course Link](https://developer.android.com/courses/android-basics-kotlin/course)
+
+[<img width="100px" src="https://user-images.githubusercontent.com/44410069/162812613-3fc82358-5607-43ac-935c-34b542fe3cde.svg" />](https://developer.android.com/courses/android-basics-kotlin/course)
 
 <details>
   <summary>Work Screenshots</summary>

@@ -13,8 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.inventory
-
 import android.app.Application
+import com.example.inventory.data.ItemRoomDatabase
 
-class InventoryApplication : Application()
+class InventoryApplication : Application(){
+    val database: ItemRoomDatabase by lazy { ItemRoomDatabase.getDatabase(this) }
+}

@@ -23,8 +23,6 @@ import java.text.NumberFormat
 /**
  * Entity data class represents a single row in the database.
  */
-fun Item.getFormattedPrice(): String =
-    NumberFormat.getCurrencyInstance().format(itemPrice)
 @Entity
 data class Item(
     @PrimaryKey(autoGenerate = true)
@@ -36,3 +34,8 @@ data class Item(
     @ColumnInfo(name = "quantity")
     val quantityInStock: Int,
 )
+/**
+ * Returns the passed in price in currency format.
+ */
+fun Item.getFormattedPrice(): String =
+    NumberFormat.getCurrencyInstance().format(itemPrice)

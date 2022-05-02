@@ -77,11 +77,16 @@
                 <Space
                     android:layout_width="50dp"
                     android:layout_height="wrap_content">
-                    
                 </Space>
-
+                <TextView
+                    android:id="@+id/temp_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max temp"
+                    android:textColor="@color/white">
+                </TextView>
             </LinearLayout>
-
         </LinearLayout>
+
     </RelativeLayout>
 </RelativeLayout>

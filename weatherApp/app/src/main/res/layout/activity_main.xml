@@ -36,5 +36,29 @@
                 android:textColor="@color/white">
             </TextView>
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/overviewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:text="Clear Sky">
+            </TextView>
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="90sp">
+
+            </TextView>
+
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

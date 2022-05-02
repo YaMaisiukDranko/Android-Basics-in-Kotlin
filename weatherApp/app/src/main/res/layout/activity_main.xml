@@ -24,7 +24,16 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/adress"
                 android:textSize="24sp"
-                android:text="Location">
+                android:text="Location"
+                android:textColor="@color/white">
+            </TextView>
+            <TextView
+                android:id="@+id/updated_at"
+                android:textSize="14sp"
+                android:text="Updated at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white">
             </TextView>
         </LinearLayout>
     </RelativeLayout>

@@ -113,6 +113,24 @@
                 android:src="@drawable/sunrise"
                 app:tint="#FFF">
             </ImageView>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Sunrise"
+                android:textSize="12sp">
+            </TextView>
+            <TextView
+                android:id="@+id/sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="5:30 AM"
+                android:textColor="@color/white">
+            </TextView>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
